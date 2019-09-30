@@ -1,0 +1,32 @@
+{
+    "name": "Argumts",
+    "fields": [
+        {
+            "fieldName": "nom",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "type",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "fonctions",
+            "otherEntityRelationshipName": "argumts",
+            "relationshipName": "fonctions",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190923133518",
+    "entityTableName": "argumts",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "convertapp",
+    "applications": "*",
+    "microserviceName": "convertapp"
+}

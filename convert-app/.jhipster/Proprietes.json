@@ -1,0 +1,32 @@
+{
+    "name": "Proprietes",
+    "fields": [
+        {
+            "fieldName": "nom",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "type",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "baseClass",
+            "otherEntityRelationshipName": "proprietes",
+            "relationshipName": "baseClass",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190923133516",
+    "entityTableName": "proprietes",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "convertapp",
+    "applications": "*",
+    "microserviceName": "convertapp"
+}

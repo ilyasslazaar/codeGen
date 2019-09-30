@@ -1,0 +1,38 @@
+{
+    "name": "Fonctions",
+    "fields": [
+        {
+            "fieldName": "nom",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "type",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "argumts",
+            "otherEntityRelationshipName": "fonctions",
+            "relationshipName": "argumts"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "baseClass",
+            "otherEntityRelationshipName": "fonctions",
+            "relationshipName": "baseClass",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190923133519",
+    "entityTableName": "fonctions",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "convertapp",
+    "applications": "*",
+    "microserviceName": "convertapp"
+}

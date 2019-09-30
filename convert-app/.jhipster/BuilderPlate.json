@@ -1,0 +1,35 @@
+{
+    "name": "BuilderPlate",
+    "fields": [
+        {
+            "fieldName": "defaultCode",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "baseClass",
+            "otherEntityRelationshipName": "builderPlate",
+            "relationshipName": "baseClass",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "refCode",
+            "otherEntityRelationshipName": "builderPlate",
+            "relationshipName": "refCode",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190923133522",
+    "entityTableName": "builder_plate",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "convertapp",
+    "applications": "*",
+    "microserviceName": "convertapp"
+}
