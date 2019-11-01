@@ -1,0 +1,32 @@
+{
+    "name": "Langages",
+    "fields": [
+        {
+            "fieldName": "nom",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "code",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "baseClass",
+            "otherEntityRelationshipName": "langages",
+            "relationshipName": "baseClass",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190923133517",
+    "entityTableName": "langages",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "convertapp",
+    "applications": "*",
+    "microserviceName": "convertapp"
+}

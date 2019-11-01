@@ -1,0 +1,49 @@
+{
+    "name": "BaseClass",
+    "fields": [
+        {
+            "fieldName": "nom",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "imports",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "fonctions",
+            "otherEntityRelationshipName": "baseClass",
+            "relationshipName": "fonctions"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "langages",
+            "otherEntityRelationshipName": "baseClass",
+            "relationshipName": "langages"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "proprietes",
+            "otherEntityRelationshipName": "baseClass",
+            "relationshipName": "proprietes"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "builderPlate",
+            "otherEntityRelationshipName": "baseClass",
+            "relationshipName": "builderPlate"
+        }
+    ],
+    "changelogDate": "20190923133520",
+    "entityTableName": "base_class",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "convertapp",
+    "applications": "*",
+    "microserviceName": "convertapp"
+}

@@ -1,0 +1,27 @@
+{
+    "name": "RefCode",
+    "fields": [
+        {
+            "fieldName": "langage",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "builderPlate",
+            "otherEntityRelationshipName": "refCode",
+            "relationshipName": "builderPlate"
+        }
+    ],
+    "changelogDate": "20190923133521",
+    "entityTableName": "ref_code",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "convertapp",
+    "applications": "*",
+    "microserviceName": "convertapp"
+}

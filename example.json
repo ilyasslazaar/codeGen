@@ -1,0 +1,67 @@
+{
+  
+  "name": "CalssName",
+  "import": "import java.util.*; import java.*;",
+  "Dev":"JAVA;JS;PHP",
+  "languages": {
+    "Java": {    
+      "code": "System.out.println(\"Hello Java\"); System.out.println(\"Second line\");"
+    },
+    "PHP": {    
+      "code": "echo 'Hello PHP';echo 'Second line';"
+    },
+    "JS": {    
+      "code": "alert(\"Hello, JS!\"); alert (\"Second line\");"
+    }         
+  },
+  "properties": {
+    "foo": {
+      "type": "String"
+    },
+    "bar": {
+      "type": "integer"
+    },
+    "baz": {
+      "type": "boolean"
+    },
+    "list":
+    {
+      "type":"ArrayList,String"
+    },
+    "list2":
+    {
+      "type":"ArrayList,int"
+    }
+  },
+  "functions": [    {
+      "name": "functionName",
+      "returnType": "boolean",
+      "arguments": [
+        {
+          "name": "n",
+          "type": "String"
+        },
+        {
+          "name": "tee",
+          "type": "Double"
+        },
+        {
+          "name": "nchalah",
+          "type": "Double"
+        }
+
+      ]
+    },
+    {
+      "name": "NCHALAH",
+      "returnType": "boolean",
+      "arguments": [
+        {
+          "name": "nnnnnnn",
+          "type": "integer"
+        }
+        
+      ]
+    }
+  ]
+}

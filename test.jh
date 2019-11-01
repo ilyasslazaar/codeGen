@@ -1,0 +1,51 @@
+
+
+
+entity Proprietes {
+    nom String,
+    type String
+}
+entity Langages {
+    nom String,
+  	code String
+}
+
+entity Argumts {
+     nom String,
+     type String	
+}
+
+entity Fonctions {
+     nom String,
+     type String,   	
+}
+
+entity BaseClass {
+     nom String,
+     imports String,
+}
+
+entity RefCode {
+	 langage String
+}
+entity BuilderPlate {
+	defaultCode String
+}
+
+
+
+relationship OneToMany {
+BaseClass to Fonctions,
+BaseClass to Langages,
+BaseClass to Proprietes,
+Fonctions to Argumts,
+BaseClass to BuilderPlate,
+RefCode to BuilderPlate
+}
+
+// Set service options to all except few
+service all with serviceImpl
+dto * with mapstruct
+
+// Set an angular suffix
+// angularSuffix * with mySuffix

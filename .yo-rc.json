@@ -1,0 +1,35 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.mycompany.myapp"
+    },
+    "jhipsterVersion": "5.8.2",
+    "applicationType": "microservice",
+    "baseName": "convertapp",
+    "packageName": "com.mycompany.myapp",
+    "packageFolder": "com/mycompany/myapp",
+    "serverPort": "8082",
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": true,
+    "jwtSecretKey": "ZDIwMjA5OWY4OTE5MjBhOTI5ZmY3MmExNmZjMjgyY2VkNmFkMmZlNjBmZmViOGViZmU3NGZmYTMzZmQ4YjI3MTNmNzgwOTMxZjU3NmRkN2EyODAyMjQzZTIwM2Q2MzFiZWExNjM4ZmE1ZjdhYTU3N2RkMmMxZTFlZTE4Y2Y0NGI=",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}
